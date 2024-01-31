@@ -8,6 +8,6 @@ runs:
       run: ${GITHUB_ACTION_PATH}/url-environment.sh
 
     - name: Setup Commit Environment
-      uses: actions/github-script@v6
+      uses: actions/github-script@v7.0.1
       with:
         script: require(`${process.env.GITHUB_ACTION_PATH}/commit-environment.js`)({github, context, core})
